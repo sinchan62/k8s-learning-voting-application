@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: voting-service
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      targetPort: 80
+      nodePort: 31001
+  selector:
+      name: voting-app-pod
+      app: demo-voting-app
+      
