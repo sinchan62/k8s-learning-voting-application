@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/sinchan62/k8s-learning-voting-application.git
     targetRevision: HEAD
-    path: dev
+    path: voting-application
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
